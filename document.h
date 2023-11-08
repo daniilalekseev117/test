@@ -16,6 +16,8 @@ struct Document {
     int rating = 0;
 };
 
+std::ostream& operator<< (std::ostream& out, const Document& document);
+
 enum class DocumentStatus {
     ACTUAL,
     IRRELEVANT,

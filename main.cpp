@@ -6,6 +6,8 @@
 #include "string_processing.h"
 #include "document.h"
 
+using namespace std;
+
 int main() {
     SearchServer search_server(std::string("and in at"));
     RequestQueue request_queue(search_server);
