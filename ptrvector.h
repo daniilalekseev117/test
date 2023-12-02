@@ -66,11 +66,11 @@ public:
     }
 
     T* begin() {
-        return items_.empty() ? nullptr : items_[0];
+        return *items_.begin();
     }
 
     T* end() {
-        return items_.empty() ? nullptr : items_[0] + items_.size();
+        return *items_.end();
     }
 
 
